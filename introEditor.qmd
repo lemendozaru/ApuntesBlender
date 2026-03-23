@@ -1,0 +1,79 @@
+# Un vistazo al Editor
+
+Blender está dividido en varias secciones que nos permiten crear el contenido. Veamos una breve descripción.
+
+## Elementos del editor
+
+### La Vista (viewport)
+
+La parte más grande que está en medio de la pantalla que nos permite ver e interactuar con el entorno 3D.
+
+### Árbol (Outliner)
+
+Es el panel que se encuentra a la derecha y arriba, por defecto. Es donde se enlistan los diferentes elementos que tenemos en el entorno 3D. Podemos seleccionar dichos elementos en este panel.
+
+### Inspector o Propiedades (Properties)
+
+Se encuentra a la derecha, abajo. Muestra las propiedades del elemento seleccionado.
+
+### Línea de tiempo (Timeliner)
+
+Es el panel inferior. Ahí se muestran las propiedades de la animación que estemos realizando.
+
+## Personalizando el editor
+
+### Cambiar el tamaño del panel
+
+Es posible cambiar el tamaño de los elementos si colocamos el cursor entre dos de ellos, damos clic y lo arrastramos de acuerdo al tamaño deseado.
+
+### Cambiar el tipo de panel
+
+En la parte superior izquierda de cada panel hay un botón que al presionarlo nos muestra todos los posibles tipos de panel que tiene Blender.
+
+### Las capas predefinidas
+
+Blender cuenta con varios tipos de capas predefinidas para determinadas tareas, tales como modelado, esculpido, edición UV y animación. Podemos cambiar entre esas capas utilizando las pestañas que se encuentran arriba de la Vista.
+
+### Entendiendo las herramientas y configuraciones
+
+Cada ventana y panel en Blender cuenta con sus propias herramientas y configuraciones. Por ejemplo, en la Vista tenemos menúes contextuales para *Vista*, *Seleccionar*, *Agregar* y *Objeto*.
+
+Las herramientas a la mano izquierda dependen del modo en el que estemos trabajando.
+
+### Atajos de teclado
+
+Blender hace un uso extensivo de los atajos de teclado. Es muy buena idea irnos familiarizando con ellos, ya que en la mayoría de las veces están muy bien pensados y agilizan bastante el flujo de trabajo. Podemos ir viendo cuáles atajos son si colocamos el cursor encima de cada botón.
+
+::: {.callout-important}
+## Importante
+En estos apuntes indicaré las combinaciones de teclas y clics del ratón con la convención "kbd", por ejemplo, el atajo para guardar nuestro trabajo es {{<kbd Ctrl+S>}}, el punto numérico es {{<kbd Num.>}} y el clic izquierdo es {{<kbd Clic-I>}}.
+:::
+
+## Navegando por la Vista
+
+### Orbitando la cámara
+
+Podemos ver girar la cámara dentro del entorno 3D si presionamos la rueda del ratón ({{<kbd Clic-M>}}) y arrastramos este. Estaremos orbitando alrededor del centro de nuestro entorno.
+
+### Moviendo la cámara
+
+Si ahora presionamos la tecla {{<kbd Mayus>}} (también conocida como "Shift"), con la rueda del ratón (que a partir de ahora pondremos como {{<kbd Mayus+Clic-M>}}), podemos mover la cámara de posición de manera lineal.
+
+### Acercar o alejar la cámara
+
+Si giramos la rueda del ratón podemos acercar o alejar la cámara. Pero si deseamos hacerlo de manera más controlada, podemos optar por presionar {{<kbd Ctrl+Clic-M>}} y arrastrar el ratón.
+
+### Enfocar el objeto seleccionado
+
+En ocasiones desearemos seleccionar y ver un objeto que no tengamos a primera vista. En esos casos, podemos optar por seleccionarlo en el árbol y presionar el punto numérico {{<kbd Num. >}}. La Vista se dirigirá al instante al elemento seleccionado.
+
+En el caso que no tengamos un teclado que incluya la sección numérica, podemos realizar lo mismo con el elemento seleccionado y yendo al menú *Vista -> Encuadrar lo seleccionado*. No es la mejor manera, pero es posible.
+
+### El gizmo
+
+Es el elemento colorido que se encuentra en la esquina superior derecha de la Vista. Nos permite ajustar el ángulo de la cámara de acuerdo con un eje determinado. Utiliza colores estandarizados: el rojo para el eje *x*, verde para *y* y el azul para *z*. Si damos {{<kbd Clic-I>}} en cualquiera de esos ejes, la Vista se ajustará para visualizar exactamente a lo largo de dicho eje. Esto es bastante útil si deseamos tener una perspectiva más precisa de nuestro entorno 3D.
+
+Existen atajos para utilizar el gizmo sin el ratón. Si presionamos {{<kbd Num1>}} cambiará al eje *y*, si presionamos {{<kbd Num3>}} nos llevará al eje *x* y por último, {{<kbd Num7>}} nos conducirá al eje *z*. Si queremos cambiar de orientación en cuanto al eje (por ejemplo, cambiar de la vista *z* a la vista *-z* presionamos {{<kbd Num9>}}).
+
+
+

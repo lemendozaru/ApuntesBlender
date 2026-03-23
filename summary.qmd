@@ -1,0 +1,17 @@
+# Atajos de teclado
+
+## Archivo
+Guardar - {{<kbd Ctrl+S>}}
+Guardar como - {{<kbd Mayus+Ctrl+S>}}
+
+## Vista
+
+Orbitar cámara - {{<kbd Clic-M>}}
+Mover cámara - {{<kbd Mayus+Clic-M>}}
+Acercar/alejar cámara - {{<kbd Rueda>}}
+Acercar/alejar cámara suavemente - {{<kbd Ctrl+Clic-M>}}
+Encuadrar selección - {{<kbd Num.>}}
+Cambiar Vista a perspectiva *x* - {{<kbd Num3>}}
+Cambiar Vista a perspectiva *y* - {{<kbd Num1>}}
+Cambiar Vista a perspectiva *z* - {{<kbd Num7>}}
+Cambiar Vista a perspectiva opuesta - {{<kbd Num9>}}
