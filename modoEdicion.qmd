@@ -1,0 +1,39 @@
+# El *Modo Edición*
+
+Blender cuenta con varias formas de interacción con los objetos. Hemos visto ya el *Modo Objeto*, el cual nos permite seleccionar y modificar un modelo entero como uno solo.
+
+Sin embargo, el *Modo Edición* nos permite ir más allá y modificar aspectos individuales, tales como los vértices, los filos y las caras.
+
+## Entrando al modo
+
+Si dirigimos la vista a la parte superior izquierda de la Vista, podemos observar un menú desplegable que indica el *modo* actual de Blender. En este momento debe ser el de *Objeto*. Damos clic ahí para desplegarlo y cambiamos al *Modo Edición*. La manera alternativa es hacerlo con {{<kbd Tab>}}.
+
+Algunos aspectos visuales cambian con el modo. Por ejemplo, los vértices se vuelven visibles, los filos se colorean más profundamente y, si tenemos un objeto seleccionado, sus caras se vuelven naranjas.
+
+También podremos notar que a la izquierda de la Vista aparece una mayor cantidad de herramientas.
+
+## Modificando vértices
+
+En este modo ya no podemos seleccionar un cuerpo completo, más bien solo podemos seleccionar un elemento básico, un vértice, por ejemplo. Para hacerlo, basta con dar clic en alguno. Se coloreará de blanco y las orillas a su lado lo harán de naranja pero más marcado conforme se acerquen al vértice seleccionado.
+
+Una vez seleccionado, para modificarlo se hace exactamente lo mismo que con los objetos completos, pero solo mover. Al ser literalmente puntos, no tiene sentido rotarlos ni escalarlos.
+
+## Modificando bordes
+
+Primero debemos seleccionar la orilla a editar. Pero por defecto, no podemos. De hecho, pudimos seleccionar un vértice porque Blender tiene hablitado el modo de selección de vértice desde el principio. Para poder dar clic en un filo y seleccionarlo, debemos ir justo a la derecha del menú desplegable donde cambiamos al *Modo Edición* y damos clic en el botón *Modo de selección de bordes*.
+
+Ahora ya podemos seleccionar un borde y modificarle su posición, ángulo y tamaño, aunque con las restricciones naturales de una línea. Por ejemplo, podemos moverla y girarla por completo, pero no lograremos volverla más gruesa, aunque sí más larga.
+
+## Modificando caras
+
+Se presenta la misma situación que antes. Debemos cambiar de modo de selección para poder seleccionar una cara. Hecho esto, podemos mover, rotar y escalar las caras, considerando que son planos, por lo que solo habrá la restricción de no poder darles espesor, ya que tienen largo y ancho, pero no altura, por ejemplo.
+
+## Modificando elementos de varios objetos
+
+Solo podemos editar estos componentes en un modelo a la vez. Si deseamos modificar las caras de dos modelos, por ejemplo, debemos cambiar al *Modo Objeto*, seleccionar el nuevo cuerpo y volver al *Modo Edición*. Tenemos la ventaja del atajo de teclado, a recordar: {{<kbd Tab>}}.
+
+## Practicando
+
+Convirtamos el clásico cubo en una pirámide. Para ello, lo seleccionamos y cambiamos al *Modo Edición* con {{<kbd Tab>}}. Luego cambiamos a la selección de caras y elegimos la superior del cubo. Presionamos {{<kbd S>}} y nos aseguramos de encoger la cara con el ratón hasta casi darle la forma deseada. Cuidemos de no pasarnos demasiado. Por último, presionamos {{<kbd G>}} -> {{<kbd Z>}} para poder mover la cara hacia arriba y la arrastramos hasta tener una pirámide muy alta y delgada. Listo, ya sabemos editar los elementos básicos de un modelo 3D.
+
+

@@ -1,0 +1,53 @@
+# Atajos de teclado
+
+## Archivo
+
+Guardar - {{<kbd Ctrl+S>}}
+
+Guardar como - {{<kbd Mayus+Ctrl+S>}}
+
+## Vista
+
+Orbitar cámara - {{<kbd Clic-M>}}
+
+Mover cámara - {{<kbd Mayus+Clic-M>}}
+
+Acercar/alejar cámara - {{<kbd Rueda>}}
+
+Acercar/alejar cámara suavemente - {{<kbd Ctrl+Clic-M>}}
+
+Encuadrar selección - {{<kbd Num.>}}
+
+Cambiar Vista a perspectiva *x* - {{<kbd Num3>}}
+
+Cambiar Vista a perspectiva *y* - {{<kbd Num1>}}
+
+Cambiar Vista a perspectiva *z* - {{<kbd Num7>}}
+
+Cambiar Vista a perspectiva opuesta - {{<kbd Num9>}}
+
+## Objetos
+
+Eliminar selección - {{<kbd X>}}
+
+Agregar un objeto - {{<kbd Mayus+A>}} -> Escribir el nombre del objeto
+
+Seleccionar varios objetos de uno por uno en el Árbol - {{<kbd Ctrl+Clic-I>}}
+
+Seleccionar un bloque de objetos en el Árbol - {{<kbd Clic-I>}} en el primero, luego {{<kbd Mayus+Clic-I>}} en el último.
+
+Seleccionar varios objetos en la Vista - {{<kbd Clic-I>}}, luego {{<kbd Mayus+Clic-I>}}.
+
+Seleccionar todos los objetos en la Vista - {{<kbd A>}}
+
+## Operaciones con objetos
+
+Acceder a las operaciones disponibles - {{<kbd Mayus+Espacio>}} -> Operación a realizar.
+
+Mover - {{<kbd G>}} -> Eje en el que se moverá, por ejemplo {{<kbd X>}} -> Distancia
+
+Rotar - {{<kbd R>}} -> Eje sobre el que girará, por ejemplo {{<kbd X>}} -> Ángulo
+
+Escalar - {{<kbd S>}} -> Eje en el que se escalará, por ejemplo {{<kbd X>}} -> Proporción
+
+

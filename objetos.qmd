@@ -1,0 +1,110 @@
+# Los objetos en Blender
+
+Lo que vemos en la pantalla inicial de Blender son objetos. Veamos una introducción a los mismos y lo que podemos hacer con ellos.
+
+## Interactuando con objetos
+
+Exploremos cómo crear y eliminar objetos. Curiosamente, primero veremos lo segundo.
+
+### Borrando objetos
+
+En Blender siempre se crean tres objetos básicos cada vez que abrimos un proyecto vacío (o cada vez que abrimos el programa), los cuales son imprescindibles en videojuegos 3D: una fuente de luz, una cámara y un cubo. Bueno, el cubo no es necesario pero el punto se entiende.
+
+Si deseamos eliminar dicho cubo, lo seleccionamos con {{<kbd Clic-I>}} directamente en la Vista o mediante el Árbol y luego presionamos {{<kbd Supr>}}, aunque también el atajo {{<kbd X>}} funciona, aunque nos pedirá confirmación.
+
+### Creando objetos
+
+Si nos acostumbramos al uso del teclado para realizar las acciones en Blender, tendremos un flujo de trabajo muy fluido. Presionamos {{<kbd Mayus+A>}} y aparecerá un buscador, en el cual podremos navegar con las flechas del teclado. Pero si conocemos el nombre de lo que deseamos crear, ahí podemos escribirlo y se desplegará un listado de las coincidencias. En mi caso, cambié el idioma de Blender al español, por lo que al poner "cubo" lo muestra y simplemente lo seleccionamos con las flechas del teclado, damos {{<kbd Entrar>}} y lo crea en el origen del espacio en la Vista.
+
+Sin embargo, hacer que el objeto aparezca en la Vista no necesariamente ha terminado de crearlo. Podemos modificar sus propiedades aún. Por ejemplo, creamos un cubo (del tipo malla) y justo en la esquina inferior izquierda de la Vista aparecerá un pequeño recuadro que dice *Agregar cubo*. Si le damos clic se desplegará y mostrará algunas propiedades que podemos modificar del objeto, tales como su tamaño, alineación, posición y rotación. Somos libres de modificar esos valores sin problema aparente.
+
+### Trabajando con varios objetos
+
+Podemos crear varios objetos e Interactuar con ellos de manera independiente. Por ejemplo, podemos seleccionar varios por medio del Árbol. Si queremos ir seleccionando uno por uno, dejamos presionado {{<kbd Ctrl>}} y con {{<kbd Clic-I>}} lo iremos haciendo.
+
+Si queremos seleccionar todo un bloque, damos clic en el primer elemento, luego dejamos presionado {{<kbd Mayus>}} y damos clic en el último elemento.
+
+En la Vista es ligeramente diferente. Ahí el atajo para seleccionar elementos es mediante la tecla {{<kbd Mayus>}} sostenida e ir dando clic en cada objeto. Si se desea seleccionar varios que se encuentren juntos, basta con arrastrar el {{<kbd Clic-I>}} de manera que los encerremos en un recuadro que aparecerá en pantalla. Sin embargo, se recomienda utilizar mejor el Árbol.
+
+Si se desea seleccionar todos los elementos que están en la vista, basta con presionar {{<kbd A>}}.
+
+## Modificando los objetos
+
+El fundamento de las modificaciones que se realizan en Blender son tres operaciones: *Mover*, *Rotar* y *Esclar*. Veamos las tres.
+
+### Mover
+
+Existen tres maneras de modificar un objeto, aunque todas requieren que primero lo seleccionemos. Veamos las maneras de mover uno, es decir, cambiar su ubicación en el espacio.
+
+#### Mover visualmente
+
+Ya seleccionado, podemos dar clic en el botón *Mover* que se encuentra a mano izquierda de la Vista. En el objeto aparecerá un gizmo individual con tres flechas de colores que representan las direcciones o ejes en el espacio. Simplemente damos clic en la que deseamos modificar y arrastramos. En el Inspector podemos ver su cambio de posición en tiempo real.
+
+#### Mover con el Inspector
+
+Seleccionamos el objeto y modificamos su posición en el campo de texto correspondiente en el Inspector. Esta se encuentra en la categoría *Objeto -> Transformación -> Posición X*, por ejemplo.
+
+#### Mover con teclado
+
+Con el objeto selccionado presionamos {{<kbd G>}}, luego el eje en el que se moverá, por ejemplo en *Y* pues presionamos {{<kbd Y>}} y al final la distancia que se moverá, seguido por {{<kbd Entrar>}}. Recordemos que Godot trabaja con metros. Existe una forma híbrida, que consiste en presionar {{<kbd Mayus+Espacio>}} -> {{<kbd G>}} y obtendremos el gizmo. Pueden combinarse estas tres maneras.
+
+Podemos notar que las tres maneras son precisas, siempre y cuando la primera se haga con el Inspector a la vista.
+
+### Rotar
+
+Se refiere a girar el cuerpo un cierto ángulo con respecto a un eje determinado.
+
+#### Visualmente
+
+Es la misma mecánica que mover, con la salvedad de que si presionamos el botón de *Rotar* aparece un gizmo con círculos de colores en vez de flechas. Siguen representando los mismos ejes, pero ahora de giro sobre ellos mismos.
+
+#### Inspector
+
+Si deseamos girar el cuerpo sobre su eje *Z* lo seleccionamos y modificamos el ángulo de rotación en su propiedad *Rotación Z* de la sección *Transformación*.
+
+#### Teclado
+
+Seleccionar el objeto y presionar {{<kbd R>}}, enseguida el eje sobre el que girará, por ejemplo *Y*: {{<kbd Y>}}, seguido por el ángulo de giro. Confirmamos con {{<kbd Entrar>}}
+
+### Escalar
+
+Se refiere a cambiar de tamaño un objeto, pero de manera controlada, mediante un valor que llamamos proporción. Por ejemplo, duplicar el tamaño de un objeto implica aplicarle una escala de `2`.
+
+#### Visualmente
+
+Seleccionar el cuerpo y presionar el botón de *Escalar*. Aparecerá un gizmo similar al de mover, pero ahora no son flechas de colores, solo ejes con un cubo en su punta. Arrastramos el eje en cuyo sentido deseamos cambiar el tamaño del cuerpo, siempre apoyándonos del Inspector.
+
+#### Inspector
+
+Solo modificamos el valor en el eje deseado.
+
+#### Teclado
+
+Seleccionamos el objeto, presionamos {{<kbd S>}}, luego el eje sobre el que queremos redimensionar y terminamos con la proporción de escalado para confirmar con {{<kbd Entrar>}}.
+
+Tengamos en cuenta que el escalado es relativo. Es decir, aplicar un escalado en *X* de `2` y luego otro de `1` no devuelve el objeto a su tamaño original. Tendría que realizarse con un nuevo escalado de `0.5`.
+
+## Componentes de los objetos
+
+Los objetos fundamentales de un modelo 3D son tres: los vértices, las orillas y las caras. Definamos brevemente cada uno.
+
+### Los vértices
+
+Es el elemento más básico de un modelo. Un vértice es esencialmente un punto en el espacio. Un modelo 3D es formado por la unión de varios vértices conectados. Por ejemplo, en un cubo los puntos que se encuentran en todas sus esquinas son vértices. En una esfera es lo mismo, solo que para dar esa apariencia suave hablamos de miles de vértices unidos.
+
+### Los bordes
+
+El segundo elemento son los bordes. Se forman cuando conectamos dos vértices, uno con el otro. En nuestro cubo, son los filos de 90° que se forman en las esquinas. Podríamos decir que son las líneas en el espacio.
+
+### Las caras
+
+Se forman cuando tres o más vértices se unen, dando como resultado un plano en el espacio. En el cubo se corresponden con sus caras, literalmente.
+
+### Resolución
+
+El número de vértices definirá su resolución y detalles. Mientras más vértices tengamos, mayor será la resolución y el conteo de polígonos, lo cual permitirá tener una geometría más detallada.
+
+
+
+
+

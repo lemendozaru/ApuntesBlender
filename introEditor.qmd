@@ -57,11 +57,15 @@ Podemos ver girar la cámara dentro del entorno 3D si presionamos la rueda del r
 
 ### Moviendo la cámara
 
-Si ahora presionamos la tecla {{<kbd Mayus>}} (también conocida como "Shift"), con la rueda del ratón (que a partir de ahora pondremos como {{<kbd Mayus+Clic-M>}}), podemos mover la cámara de posición de manera lineal.
+Si ahora dejamos presionada la tecla {{<kbd Mayus>}} (también conocida como "Shift"), con la rueda del ratón (que a partir de ahora pondremos como {{<kbd Mayus+Clic-M>}}), podemos mover la cámara de posición de manera lineal.
 
 ### Acercar o alejar la cámara
 
-Si giramos la rueda del ratón podemos acercar o alejar la cámara. Pero si deseamos hacerlo de manera más controlada, podemos optar por presionar {{<kbd Ctrl+Clic-M>}} y arrastrar el ratón.
+Si giramos la rueda del ratón podemos acercar o alejar la cámara. Pero si deseamos hacerlo de manera más controlada, podemos optar por mantener presionado {{<kbd Ctrl+Clic-M>}} y arrastrar el ratón.
+
+Si deseamos acercarnos sin límite aparente alguno, podemos entrar a *Editar -> Preferencias* y buscamos el apartado *Navegación*. Ahí ubicaremos la propiedad *Profundidad* y la activamos.
+
+Por último, es posible que deseemos que al acercarnos la cámara lo haga en el cursor y no en el centro del espacio. Lo conseguimos exactamente donde mismo que el párrafo anterior, solo que ahora activamos la propiedad *Ampliar hacia posición del ratón*.
 
 ### Enfocar el objeto seleccionado
 
