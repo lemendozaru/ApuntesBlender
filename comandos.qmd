@@ -40,6 +40,8 @@ Seleccionar varios objetos en la Vista - {{<kbd Clic-I>}}, luego {{<kbd Mayus+Cl
 
 Seleccionar todos los objetos en la Vista - {{<kbd A>}}
 
+Seleccionar todos los bordes de un anillo - {{<kbd Mayus+Alt+Clic-I>}}
+
 ## Operaciones con objetos
 
 Acceder a las operaciones disponibles - {{<kbd Mayus+Espacio>}} -> Operación a realizar.
@@ -50,4 +52,9 @@ Rotar - {{<kbd R>}} -> Eje sobre el que girará, por ejemplo {{<kbd X>}} -> Áng
 
 Escalar - {{<kbd S>}} -> Eje en el que se escalará, por ejemplo {{<kbd X>}} -> Proporción
 
+## Herramientas
+
+Extruir caras - {{<kbd E>}}
+
+Cortar en bucle - {{<kbd Ctrl+R>}}
 

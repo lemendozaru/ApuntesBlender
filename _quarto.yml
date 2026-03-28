@@ -9,6 +9,7 @@ book:
     - intro.qmd
     - introEditor.qmd
     - objetos.qmd
+    - extrusion.qmd
     - comandos.qmd
     - references.qmd
 
