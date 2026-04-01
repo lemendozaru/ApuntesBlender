@@ -1,5 +1,9 @@
 # Atajos de teclado
 
+## General
+
+Buscar comando - {{<kbd F3>}}
+
 ## Archivo
 
 Guardar - {{<kbd Ctrl+S>}}
@@ -44,7 +48,7 @@ Seleccionar todos los objetos en la Vista - {{<kbd A>}}
 
 Seleccionar todos los bordes de un anillo - {{<kbd Mayus+Alt+Clic-I>}}
 
-## Operaciones con objetos
+## Operaciones
 
 Acceder a las operaciones disponibles - {{<kbd Mayus+Espacio>}} -> Operación a realizar.
 
@@ -61,4 +65,12 @@ Extruir caras - {{<kbd E>}}
 Cortar en bucle - {{<kbd Ctrl+R>}}
 
 Insertar caras - {{<kbd I>}}
+
+Biselar - {{<kbd Ctrl+B>}}
+
+Cortar - {{<kbd K>}}
+
+Edición proporcional - {{<kbd O>}}
+
+
 

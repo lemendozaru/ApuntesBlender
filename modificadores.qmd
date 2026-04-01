@@ -1,10 +1,67 @@
 # Modificadores
 
-Hemos abordado hasta ahora herramientas que nos permiten editar la geometría de un objeto, pero no hemos visto cómo podemos crear otros nuevos a partir de la modificación de dos o más, como la unión o la resta lógicas de cuerpos. Bien, revisemos este conjunto de modificadores.
+Hemos abordado hasta ahora herramientas que nos permiten editar la geometría de los elementos individuales de un objeto, pero no hemos visto cómo podemos crear otros nuevos a partir de la modificación de uno, dos o más modelos completos. Esto abarca tanto la unión o la resta lógicas de cuerpos o la modificación que no se refiere propiamente a vértices, bordes o caras. Bien, revisemos este conjunto de componentes de Blender.
 
-## Modificador de Unión
+## Unir
 
 Este nos permite crear geometrías complejas a partir de la unión de varios objetos. Además, es útil para mejorar el rendimiento del renderizado en videojuegos ya que el motor solo lo hace con uno en lugar de varios "unidos" dentro del mismo.
 
 ### Uso de la Unión
 
+Para utilizar este modificador vamos a partir de un archivo nuevo en el que eliminaremos el cubo. Agregamos un cilindro y una esfera a la escena. Al cilindro lo vamos a alargar, ya que pretenderemos modelar una paleta de caramelo sencilla. Después movemos la esfera para que quede justo encima del cilindro y la escalamos a un tamaño que nos parezca adecuado. Manteniendo {{<kbd Mayus>}} damos clic en el cilindro. Con esto tendremos ambos objetos seleccionados.
+
+El siguiente paso es presionar {{<kbd F3>}}, lo cual activa la búsqueda de comandos en Blender y escribir `Unir`. Damos {{<kbd Intro>}} sobre el comando que aparezca y habremos convertido ambos objetos en uno solo.
+
+## Accediendo a los modificadores
+
+Partamos de nuevo en Blender. Con el cubo seleccionado, nos dirigimos al inspector. Por defecto, este muestra las propiedades del cubo, como su posición o tamaño. Pero eso es solo parte de una categoría, la de *Objeto*. Si nos fijamos bien, tenemos una muy buena cantidad de ellas. Debajo de la actual veremos una pestaña con el icono de una llave para tuercas. Esta es la categoría de *Modificadores*. Al entrar en ella, veremos solo un botón *Agregar modificador*.
+
+Damos clic en el botón y aparecen varias secciones: *Editar*, *Generar*, *Deformación*, y más. Elijamos la de *Generar -> Biselar*. Veamos qué sucedió. Hemos biselado el cubo completo, sin pasar la herramienta de *Biselar* a un borde específico. En el inspector veremos también que han aparecido las diferentes opciones de personalización del biselado, tales como la cantidad, el tipo e incluso en ángulo.
+
+### Modificadores en modo Edición
+
+Si cambiamos al modo *Edición* mientras estamos aplicando modificadores a un objeto, este mostrará su forma original en forma "fantasmal", ya que en realidad, el cuerpo como tal no se ha modificado en su geometría, solo en su apariencia. Esto implica que podemos editar los componentes del modelo y observar su efecto en el modificador en tiempo real. Por ejemplo, si creamos un corte o añadimos una superficie nueva. Podemos mostrar o no el modificador si clicamos en el botón azul que está a la derecha de su nombre que se llama *Modo Edición*.
+
+El modificador no será aplicado de manera automática, debemos confirmarlo desplegando el menú a la derecha de los botones azules en el inspector y eligiendo con clic *Aplicar*. Solo funciona si ya hemos salido del modo Edición.
+
+## Modificador Booleano
+
+Este nos permite "unir" dos cuerpos, pero enseguida extraer uno del otro. Así podemos crear "moldes", por así decirlo.
+
+### Uso del booleano
+
+Veamos cómo utilizar este modificador. Partamos de un archivo nuevo y agreguemos al cubo una esfera. Deseamos crear un orificio esférico en el cubo. Subamos esta un poco, de manera que solo su mitad quede por fuera de aquél. Podemos apoyarnos en la vista alámbrica.
+
+Escalamos la esfera al `0.9` y seleccionamos el cubo. Nos vamos a sus modificadores, agregamos uno de tipo *Generar -> Booleana* y mediante el cuentagotas que está al lado damos clic en la esfera. Dejamos las opciones como están y clicamos en *Aceptar*. Con ello, podemos eliminar la esfera y ya tendremos su impronta en el cubo.
+
+Como práctica, generemos un cubo con perforaciones circulares en cada una de sus caras.
+
+## Edición proporcional
+
+En esta sección exploraremos una poderosa habilidad de Blender: la edición proporcional. Esta nos permite modificar los vértices que rodean a uno específico y le aplican una transición suave. Esto puede ser muy útil si deseamos modelar terrenos u objetos orgánicos.
+
+### Usando la edición proporcional
+
+Para ilustrar cómo se utiliza esta herramienta, insertemos en un nuevo archivo un plano al que haremos dos cortes en bucle hasta llegar a tener 100 subplanos. Cambiamos a selección por vértice y seleccionamos el que se encuentra en el centro del plano. Movámoslo en *Z* un poco, simulando una montaña.Para modelos de baja resolución no se ve tan mal, aunque sí poco orgánico.
+
+Deshagamos el cambio y cliquemos en el botón *Edición proporcional* o presionemos {{<kbd O>}}. Seleccionemos el mismo vértice y volvamos a moverlo en *Z*, mientras alteramos la zona de influencia con la rueda. El efecto es muy diferente. Podemos ver que a la derecha del botón que activa este modo de edición se encuentra otro con el icono de una campana de Gauss. Si le presionamos nos mostrará los diferentes modos de edición proporcional que podemos utilizar. Repitamos el movimiento del vértice con cada uno para que notemos las diferencias.
+
+Con esta herramienta podemos obtener formas orgánicas mucho más fácilmente. Por ejemplo, convertir una esfera en una piedra con sus respectivos bordes redondeados.
+
+## Sombreado suave
+
+En Blender tenemos algunas formas de sombrear los objetos. La que hemos visto en lo que llevamos realizado es el sombreado plano. Es el que se utiliza por defecto mientras editando los modelos. Sin embargo, podemos suavizar la transición entre los bordes de los objetos aplicando el sombreado suave.
+
+### Sombreando suavemente
+
+Aplicar este sombreado es rápido y fácil, al menos si deseamos hacerlo con el objeto entero. Para visualizarlo mejor, creemos una esfera, la seleccionamos y con {{<kbd F3>}} buscamos "sombrear suave" y lo aplicamos. Veremos que la esfera se ve mucho más "esférica".
+
+### Ajustando normales para el suavizado
+
+Habrá momentos en los que deseemos suavizar solo ciertas partes de nuestros modelos. Para ello contamos con el ajuste de normales. Las normales definen cuáles partes de nuestro objeto son planas y cuáles serán suavizadas.
+
+Para ver mejor cómo funcionan las normales, vamos a quitar la esfera y agreguemos una *Mona* mediante el atajo {{<kbd Mayus+A>}}. Con esta malla seleccionada aplicamos el sombreado suave y luego nos vamos a su pestaña *Modificadores -> Normales -> Suavizar por ángulo*. Este modificador utiliza el ángulo para decidir qué se queda plano y qué se suaviza. Los ángulos menores al que tenga definido se suavizan y los mayores se dejan planos.
+
+### Aplicando bordes afilados
+
+En algunos casos vamos a desear dejar un borde afilado o que no se suavice, aunque los demás sí lo hagan. Para ello, en modo *Edición* seleccionamos el borde deseado y buscamos con {{<kbd F3>}} "Marcar como definido" (aunque también se consigue con {{<kbd Ctrl+E>}}), regresamos al modo *Objeto* y suavizamos. Podremos notar fácilmente el borde.
