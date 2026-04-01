@@ -26,4 +26,8 @@ De la misma forma que con las caras producto de la extrusión, los bordes que re
 
 Practiquemos. Modelemos una botella "low poly" a partir de un cilindro y una esfera a partir de un cubo.
 
+## Incrustar caras
+
+
+
 
