@@ -1,0 +1,70 @@
+# Las herramientas en Blender
+
+## Extrusión
+
+Esta herramienta es útil para crear nueva geometría a partir de alguna ya existente. Básicamente, extruir significa estirar una superficie desde su posición inicial.
+
+### Uso de la herramienta
+
+Abriremos Blender con el cubo por defecto y cambiamos al modo Edición (con {{<kbd Tab>}}). Habilitamos la selección por caras y buscamos la herramienta *Extruir región* que se encuentra en la parte izquierda de la Vista. Veremos que si seleccionamos una cara, aparece un círculo con un signo "+" de color amarillo. Pues bien, demos clic en ese signo y arrastremos hacia arriba. Hemos "extraído" otro cubo a partir del original. Otra manera de seleccionar la extrusión es presionar {{<kbd E>}}. Y si deseamos ser más precisos, justo después presionamos la cantidad de metros a extruir (cada cuadro de la rejilla es un metro). Por ejemplo, para extruir una cara lateral la seleccionamos, presionamos {{<kbd E>}} y enseguida {{<kbd 2>}}.
+
+Todas las modificaciones que ya hemos visto pueden realizarse sobre las caras extruidas, podemos moverlas, rotarlas o escalarlas.
+
+Sabiendo eso, ¿cómo podríamos crear una clásica piñata mexicana de seis puntas minimalista?
+
+Volvemos a abrir Blender y cambiamos al modo Edición. Habilitamos la selección por caras y seleccionamos una. La extruimos cuatro metros ({{<kbd E>}} {{<kbd 4>}} {{<kbd Intro>}}) y enseguida la escamos a cero ({{<kbd S>}} {{<kbd 0>}} {{<kbd Intro>}}). Repetimos con cada cara.
+
+## Corte en bucle
+
+Es una característica fundamental que nos permite agregar mayor resolución a nuestro modelo al dejarnos agregarle más bordes.
+
+### Uso de la herramienta
+
+Con un cubo nuevo y en modo Edición, habilitamos la selección por bordes. Enseguida deseleccionamos el cubo y seleccionamos solo un borde. Luego buscamos la herramienta *Cortar bucle* a la izquierda y damos clic sobre el borde elegido (podemos guiarnos por una línea naranja que atraviesa el modelo). O seleccionamos el borde deseado, presionamos {{<kbd Ctrl+R>}}, damos clic de nuevo sobre el borde y podremos notar que si giramos la rueda del ratón se crearán más o menos "cortes". Si ya decidimos cuántos realizar, podemos dar {{<kbd Intro>}} y ahora cursor cambia a dos flechas: en ese momento podemos  desplazar la posición del corte. Si lo hacemos, damos clic donde deseamos dejar dicho corte. Si no, basta con presionar {{<kbd Intro>}} de nuevo.
+
+De la misma forma que con las caras producto de la extrusión, los bordes que resultan de cortar bucle pueden ser modificados.
+
+Practiquemos. Modelemos una botella "low poly" a partir de un cilindro y una esfera a partir de un cubo.
+
+## Incrustar caras
+
+Esta herramienta nos permite seleccionar alguna cara del modelo y crear más superficies dentro de la misma, lo que nos deja crear geometrías más complejas.
+
+### Uso de la herramienta
+
+Seleccionamos nuestro clásico cubo y pasamos al modo *Edición*. Cambiamos el modo de selección a caras y clicamos en cualquiera de nuestro cubo. Presionamos {{<kbd I>}} o seleccionamos el botón correspondiente y ya podemos clicar de nuevo. Aunque no parezca a simple vista, hemos creado una superficie dentro de otra, por lo que podemos modificarlo con lo que ya conocemos (escalarla, moverla o rotarla, incluso extruirla).
+
+Practiquemos un poco, vamos a crear una copa utilizando lo que ya sabemos. Borramos el cubo y agregamos un cilindro. A este le aplicamos tantos cortes en bucle como deseemos (tres está bien). Luego seleccionamos la cara inferior y la achicamos mediante el escalado que nos agrade.
+
+Luego seleccionamos los demás anillos (recordemos que se hace con {{<kbd Mayus+Alt+Clic-I>}}) y los editamos tanto de posición vertical como de escalado hasta quedar satisfechos con la forma de la copa.
+
+El siguiente paso es "ahuecar" nuestra copa. Seleccionamos la cara superior y creamos otra en ella. Dejemos un margen pequeño entre ambas con el escalado y luego la extruiremos en *Z* tanto como queramos. Por cierto, si nuestra extrusión se sale de la copa no importa, la ejecutamos, luego sin presionar nada más, con {{<kbd S>}} la escalamos y se resuelve.
+
+Tengamos en cuenta que si deseamos ver el interior de nuestros objetos, podemos habilitar la vista de "alambre" o *wireframe*, la cual se encuentra en un botón ubicado en la parte superior derecha de la Vista. Por defecto está seleccionado el modo de visualización *Sólido*.
+
+## Biselado
+
+Esta herramienta es muy útil para crear bordes suaves en nuestros modelos.
+
+### Biselando
+
+Seguimos el flujo típico de crear un archivo nuevo, cambiar al modo *Edición* con {{<kbd Tab>}} y elegir la selección por bordes. Elegimos cualquier borde y activamos la herramienta *Biselar* o presionamos {{<kbd Ctrl+B>}}. Arrastramos ligeramente el ratón y veremos que aparece solo un fileteado. Si deseamos agregar más, basta con girar la rueda del ratón para ajustar su número.
+
+Con esta herramienta somos capaces de convertir un cubo en una esfera. Deshagamos la operación anterior con {{<kbd Ctrl+Z>}} y seleccionemos todos los bordes del cubo con {{<kbd A>}}. Luego presionamos {{<kbd Ctrl+B>}} para activar el biselado. Movamos el cursor sin presionar hasta que veamos que se aplica la modificación, agreguemos o quitemos biseles con la rueda del ratón y cuando estemos satisfechos, daremos clic. Listo.
+
+Como práctica, vamos a modelar un disco para las discadas a partir de un cilindro.
+
+## Herramienta de Corte
+
+Similar al corte en bucle, con la salvedad de que nos habilita la creación personalizada de bordes y no siguiendo el contorno del modelo.
+
+### Cortando a nuestro gusto
+
+Partamos desde un cubo nuevo ya en modo *Edición*. Deseleccionamos todo y buscamos la herramienta *Cortar* o presionamos {{<kbd K>}}. El cursor tomará la forma de un cuchillo con un pequeño cŕiculo verde. Demos clic en el centro de la cara superior del cubo. Veremos que dejará un círculo verde y habrá otro en el cursor. Llevemos este hacia algún borde, damos clic, lo llevamos a otro y volvemos a dar clic. Cerremos nuestra línea de corte alrededor del cubo. Cuando lo hayamos hecho, damos {{<kbd Intro>}} y ya tendremos un borde personalizado alrededor del cubo. Si lo seleccionamos con {{<kbd Mayus+Alt+Clic-I>}} se selecciona completo, como con cualquier borde.
+
+Como práctica, dibujemos una cabeza de tornillo sobresaliendo de nuestro cubo.
+
+
+
+
+

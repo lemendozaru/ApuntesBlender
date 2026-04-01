@@ -6,6 +6,8 @@ Guardar - {{<kbd Ctrl+S>}}
 
 Guardar como - {{<kbd Mayus+Ctrl+S>}}
 
+Deshacer - {{<kbd Ctrl+Z>}}
+
 ## Vista
 
 Orbitar cámara - {{<kbd Clic-M>}}
@@ -57,4 +59,6 @@ Escalar - {{<kbd S>}} -> Eje en el que se escalará, por ejemplo {{<kbd X>}} -> 
 Extruir caras - {{<kbd E>}}
 
 Cortar en bucle - {{<kbd Ctrl+R>}}
+
+Insertar caras - {{<kbd I>}}
 

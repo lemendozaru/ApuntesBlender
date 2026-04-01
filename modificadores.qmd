@@ -1,0 +1,10 @@
+# Modificadores
+
+Hemos abordado hasta ahora herramientas que nos permiten editar la geometría de un objeto, pero no hemos visto cómo podemos crear otros nuevos a partir de la modificación de dos o más, como la unión o la resta lógicas de cuerpos. Bien, revisemos este conjunto de modificadores.
+
+## Modificador de Unión
+
+Este nos permite crear geometrías complejas a partir de la unión de varios objetos. Además, es útil para mejorar el rendimiento del renderizado en videojuegos ya que el motor solo lo hace con uno en lugar de varios "unidos" dentro del mismo.
+
+### Uso de la Unión
+
