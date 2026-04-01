@@ -28,6 +28,10 @@ Practiquemos. Modelemos una botella "low poly" a partir de un cilindro y una esf
 
 ## Incrustar caras
 
+Esta herramienta nos permite seleccionar alguna cara del modelo y crear más superficies dentro de la misma, lo que nos deja crear geometrías más complejas.
 
+### Uso de la herramienta
+
+Seleccionamos nuestro clásico cubo y pasamos al modo *Edición*. Cambiamos el modo de selección a caras y clicamos en cualquiera de nuestro cubo. Presionamos
 
 
