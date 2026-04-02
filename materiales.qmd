@@ -1,0 +1,17 @@
+# Materiales
+
+Resultan esenciales en Blender ya que son los responsables de cambiar cómo se muestran los objetos en pantalla. Esto incluye el color, brillo, reflejos, emisiones y texturas.
+
+## Configurando un material
+
+Agreguemos una esfera a nuestra escena y la suavizamos. Luego, en el inspector buscamos la categoría de *Material* (tiene un icono de esfera roja) y clicamos en el botón que dice *Nuevo*. Aparecerá una cantidad bastante grande de opciones, pero nos quedaremos con las básicas, ya que el motor hará gran parte de lo restante.
+
+Cambiaremos el color. Damos clic en la propiedad *Color base* y elegimos un rojo brillante. Damos {{<kbd Intro>}} pero no notaremos algún cambio. Es debido a la forma de renderizado de la Vista. Debemos elegir el modo *Sombreado de la Vista - Previsualización de materiales* junto a la vista alámbrica. Aquí podemos notar un bajón en la velocidad de manipulación de nuestros modelos. Si es el caso, podemos optar por mirar ocasionalmente el resultado de nuestro coloreado.
+
+Otras propiedades básicas son el *Metalizado* (que define qué tan metálico es el material) y la *Rugosidad* (este define qué tanto refleja la luz). Probemos a modificarlos para ver sus efectos.
+
+## Aplicando materiales a un objeto
+
+Blender nos permite agregar varios materiales a un modelo. Creemos un cubo y enseguida un par de materiales. Cambiamos al modo *Edición* y al seleccionar una cara del cubo, en el inspector elegimos el segundo material y damos clic en *Asignar*. Veremos que esa cara específica toma el material asignado, independientemente del que tenga el objeto completo.
+
+Como práctica, creemos tres materiales: uno que semeje vidrio negro, otro al oro y uno final que sea solo un rojo plano.

@@ -11,6 +11,7 @@ book:
     - objetos.qmd
     - herramientas.qmd
     - modificadores.qmd
+    - materiales.qmd
     - comandos.qmd
     - references.qmd
 
