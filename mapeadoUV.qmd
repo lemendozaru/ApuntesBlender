@@ -1,0 +1,3 @@
+# Mapeado UV
+
+En esta sección abordaremos el cómo texturizar un modelo 3D en Blender, utilizando el mapeado UV. Esto se refiere a proyectar un cuerpo tridimensional en una imagen plana, la cual coloreamos de acuerdo con nuestro proyecto y después enviamos de nuevo esa imagen a "forrar" el modelo, con lo cual este parecerá tener textura.

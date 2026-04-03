@@ -12,6 +12,7 @@ book:
     - herramientas.qmd
     - modificadores.qmd
     - materiales.qmd
+    - mapeadoUV
     - comandos.qmd
     - references.qmd
 
